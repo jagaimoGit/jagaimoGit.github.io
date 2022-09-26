@@ -7,7 +7,7 @@ export default class NotesView {
         this.onNoteDelete = onNoteDelete;
         this.root.innerHTML = `
         <div class="note__sidebar">
-            <p class="logo">noteTaker</p>
+            <p class="logo">DoNotes</p>
             <button type="button" class="note__add">Add note</button>
             <div class="note__list">
                 <div class="note__list-item--selected">
