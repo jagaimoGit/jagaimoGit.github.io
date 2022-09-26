@@ -29,6 +29,11 @@ html {
     background-color: #303030;
 }
 
+a {
+    color: var(--clr-accent-hover);
+    font-weight: 600;
+}
+
 .notes__app {
     display: flex;
     height: 100%;
