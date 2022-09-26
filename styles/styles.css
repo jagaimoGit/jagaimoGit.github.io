@@ -1,0 +1,126 @@
+:root {
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+    --clr-dark: #fff;
+    --clr-text-btn: #fff;
+    --clr-light: #3030;
+    --clr-selected: #303030;
+    --clr-modified: #808080;;
+    --clr-accent: #3399ff;
+    --clr-accent-hover: #00ced1;
+    --clr-border: #555555;
+}
+
+.logo {
+    font-family: var(--ff-secondary);
+    font-weight: 300;
+    color: var(--clr-light);
+    text-align: center;
+    margin: 1.25em 0;
+    font-size: 2em;
+    color: #fff;
+
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    background-color: #303030;
+}
+
+.notes__app {
+    display: flex;
+    height: 100%;
+    font-family: var(--ff-primary);
+}
+
+
+.note__sidebar {
+    border-right: 2px solid var(--clr-border);
+    flex-shrink: 0;
+    overflow-y: auto;
+    padding: 1em;
+    width: 300px;
+}
+
+.note__add {
+    background: var(--clr-accent);
+    border: none;
+    border-radius: 7px;
+    color: var(--clr-dark);
+    cursor: pointer;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    padding: 0.75em 0;
+    width: 100%;
+}
+
+.note__add:hover {
+    background: var(--clr-accent-hover);
+}
+
+.note__list-item {
+    cursor: pointer;
+}
+
+.note__list-item--selected {
+    background-color: var(--clr-selected);
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.note__title,
+.note__updated {
+    padding: 10px;
+}
+
+.note__title {
+    color: var(--clr-dark);
+    font-size: 1.2em;
+}
+
+.note__body {
+    color: var(--clr-dark);
+    padding: 0 10px;
+}
+
+.note__updated {
+    color: var(--clr-modified);
+    font-style: italic;
+    text-align: right;
+}
+
+.note__preview {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 3em;
+    flex-grow: 1;
+}
+
+.note__preview-title,
+.note__preview-body
+.note__edit-body{
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: #303030;
+    color: var(--clr-dark);
+}
+
+.note__preview-title {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.note__edit-body,
+.note__preview-body {    
+    background-color: #303030;
+    color: var(--clr-dark);
+    flex-grow: 1;
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-top: 2em;
+    resize: none;
+}
